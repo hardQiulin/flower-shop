@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>秋棠鲜花 - 专业花艺定制</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./flower-detail.css">
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <div class="logo-container me-2">
+                        <svg viewBox="0 0 100 100" class="flower-logo">
+                            <path class="petal" d="M50,30 Q65,5 50,20 Q35,5 50,30" />
+                            <path class="petal" d="M70,50 Q95,65 80,50 Q95,35 70,50" />
+                            <path class="petal" d="M50,70 Q65,95 50,80 Q35,95 50,70" />
+                            <path class="petal" d="M30,50 Q5,65 20,50 Q5,35 30,50" />
+                            <path class="petal" d="M65,35 Q85,15 65,25 Q75,5 65,35" />
+                            <circle cx="50" cy="50" r="10" class="center" />
+                        </svg>
+                    </div>
+                    <span>秋棠鲜花</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#navbarOffcanvas">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="offcanvas offcanvas-start" id="navbarOffcanvas">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">秋棠鲜花</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-contact mb-3">
+                            <a href="tel:13804169642" class="nav-contact-link">
+                                <i class="fas fa-phone-alt"></i> 13804169642
+                            </a>
+                        </div>
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="index.html"><i class="fas fa-home me-2"></i>网站首页</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html"><i class="fas fa-info-circle me-2"></i>关于我们</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="flowers.html"><i class="fas fa-seedling me-2"></i>鲜花中心</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html"><i class="fas fa-envelope me-2"></i>联系我们</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 轮播图 -->
+    <section id="hero" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190715/6cb10ac7fdf67634c976fbfb1a7b1f09.jpg"
+                    class="d-block w-100" alt="浪漫花束">
+            </div>
+            <div class="carousel-item">
+                <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190715/5816b771312b16f90e51e2f9b196c6bf.jpg"
+                    class="d-block w-100" alt="婚礼花艺">
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="https://za3.cn/data/upload/shop/textures/05987909848601839.jpg" class="d-block w-100"
+                    alt="精品花束">
+            </div> -->
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#hero" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#hero" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#hero" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#hero" data-bs-slide-to="1"></button>
+            <!-- <button type="button" data-bs-target="#hero" data-bs-slide-to="2"></button> -->
+        </div>
+    </section>
+
+    <!-- 鲜花中心 -->
+    <section id="flowers" class="py-3">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="subtitle" data-aos="fade-up">DISCOVER</h6>
+                <h2 class="title" data-aos="fade-up" data-aos-delay="100">THE FLOWERS</h2>
+                <div class="divider" data-aos="fade-up" data-aos-delay="150"></div>
+                <h3 class="subtitle-cn" data-aos="fade-up" data-aos-delay="200">鲜花中心</h3>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flower-card">
+                        <div class="flower-img">
+                            <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190716/254c2f1d54ddc7249dd21c267e9332c9.jpg"
+                                alt="忘情巴黎">
+                            <div class="flower-overlay">
+                                <a href="flower-detail.html?id=1" class="btn-view">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="flower-info">
+                            <h4>忘情巴黎</h4>
+                            <p>33朵红玫瑰</p>
+                            <a href="flower-detail.html?id=1" class="btn-view-details"><i class="fas fa-eye"></i>
+                                查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flower-card">
+                        <div class="flower-img">
+                            <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190716/f6477d496a4563398731d1c8fbad22df.jpg"
+                                alt="月光女神">
+                            <div class="flower-overlay">
+                                <a href="flower-detail.html?id=2" class="btn-view">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="flower-info">
+                            <h4>月光女神</h4>
+                            <p>19朵白玫瑰</p>
+                            <a href="flower-detail.html?id=2" class="btn-view-details"><i class="fas fa-eye"></i>
+                                查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flower-card">
+                        <div class="flower-img">
+                            <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190716/40bed7cb188a7e7c08942c3dd3c99dd1.jpg"
+                                alt="我只钟情你">
+                            <div class="flower-overlay">
+                                <a href="flower-detail.html?id=3" class="btn-view">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="flower-info">
+                            <h4>我只钟情你</h4>
+                            <p>11朵香槟玫瑰</p>
+                            <a href="flower-detail.html?id=3" class="btn-view-details"><i class="fas fa-eye"></i>
+                                查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="flower-card">
+                        <div class="flower-img">
+                            <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190716/9fdc3944ebdb541a0692bda4e320c44d.jpg"
+                                alt="缪斯女神">
+                            <div class="flower-overlay">
+                                <a href="flower-detail.html?id=4" class="btn-view">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="flower-info">
+                            <h4>缪斯女神</h4>
+                            <p>19朵红玫瑰</p>
+                            <!-- <div class="price">¥269</div> -->
+                            <a href="flower-detail.html?id=4" class="btn-view-details"><i class="fas fa-eye"></i>
+                                查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="flower-card">
+                        <div class="flower-img">
+                            <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190716/78f8522f5f013692399e61ee4aac7a31.jpg"
+                                alt="牵手一生">
+                            <div class="flower-overlay">
+                                <a href="flower-detail.html?id=5" class="btn-view">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="flower-info">
+                            <h4>牵手一生</h4>
+                            <p>红玫瑰配满天星</p>
+                            <!-- <div class="price">¥289</div> -->
+                            <a href="flower-detail.html?id=5" class="btn-view-details"><i class="fas fa-eye"></i>
+                                查看详情</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="flower-card">
+                        <div class="flower-img">
+                            <img src="https://demoall.kuaituiyun.cn/8054/uploads/allimg/20190716/62d51c9ab2bfd9651c445278ae8f8647.jpg"
+                                alt="甜美公主">
+                            <div class="flower-overlay">
+                                <a href="flower-detail.html?id=6" class="btn-view">查看详情</a>
+                            </div>
+                        </div>
+                        <div class="flower-info">
+                            <h4>甜美公主</h4>
+                            <p>33朵粉玫瑰</p>
+                            <!-- <div class="price">¥299</div> -->
+                            <a href="flower-detail.html?id=6" class="btn-view-details"><i class="fas fa-eye"></i>
+                                查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="flowers.html" class="btn-more" data-aos="fade-up">
+                    查看更多 <i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 关于我们 -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="subtitle" data-aos="fade-up">WHO WE ARE</h6>
+                <h2 class="title" data-aos="fade-up" data-aos-delay="100">ABOUT US</h2>
+                <div class="divider" data-aos="fade-up" data-aos-delay="150"></div>
+                <h3 class="subtitle-cn" data-aos="fade-up" data-aos-delay="200">关于我们</h3>
+            </div>
+
+            <div class="row align-items-center">
+                <div class="about-content">
+                    <h3>秋棠鲜花</h3>
+                    <p class="lead">在鲜花礼品行业具有广泛的知名度</p>
+                    <p>为满足客户的个性需求，主营业务涵盖鲜花、礼篮、婚庆宴会用花等服务。秋棠鲜花以快速的配送速度，优质的产品质量，周全的定制服务，良好的客户体验在行业中脱颖而出。</p>
+
+                    <div class="row mt-4">
+                        <div class="col-md-3">
+                            <div class="feature-item">
+                                <i class="fas fa-truck"></i>
+                                <h5>全城急速配送</h5>
+                                <p>2小时内送达，新鲜保证</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="feature-item">
+                                <i class="fas fa-gem"></i>
+                                <h5>精选优质花材</h5>
+                                <p>每日空运，保证新鲜</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="feature-item">
+                                <i class="fas fa-paint-brush"></i>
+                                <h5>专业花艺师设计</h5>
+                                <p>每一束都是艺术品</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="feature-item">
+                                <i class="fas fa-heart"></i>
+                                <h5>100%满意保证</h5>
+                                <p>不满意全额退款</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="btn-custom mt-4">了解更多</a>
+                </div>
+            </div>
+            <div class="col-lg-8" data-aos="fade-up">
+                <div class="contact-info">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h5>地址</h5>
+                                    <p>辽宁省锦州市古塔区古城街道南二里星16-173号</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <i class="fas fa-phone-alt"></i>
+                                <div>
+                                    <h5>电话</h5>
+                                    <p>13804169642</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h5>邮箱</h5>
+                                    <p>3579245005@qq.com</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h5>营业时间</h5>
+                                    <p>周一至周日 9:00 - 17:00</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="section-header text-center mb-5">
+                <h6 class="subtitle" data-aos="fade-up">CONTACT</h6>
+                <h2 class="title" data-aos="fade-up" data-aos-delay="100">CONTACT US</h2>
+                <div class="divider" data-aos="fade-up" data-aos-delay="150"></div>
+                <h3 class="subtitle-cn" data-aos="fade-up" data-aos-delay="200">联系我们</h3>
+            </div>
+
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up">
+                    <div class="contact-info">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <div>
+                                        <h5>地址</h5>
+                                        <p>辽宁省锦州市古塔区古城街道南二里星16-173号</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div>
+                                        <h5>电话</h5>
+                                        <p>13804169642</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <h5>邮箱</h5>
+                                        <p>3579245005@qq.com</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-clock"></i>
+                                    <div>
+                                        <h5>营业时间</h5>
+                                        <p>周一至周日 9:00 - 17:00</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- <div class="social-links mt-4 text-center">
+                            <a href="#"><i class="fab fa-weixin"></i></a>
+                            <a href="#"><i class="fab fa-weibo"></i></a>
+                            <a href="#"><i class="fab fa-qq"></i></a>
+                            <a href="#"><i class="fab fa-douyin"></i></a>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 底部 -->
+    <footer style="margin-bottom: 50px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-about">
+                        <h4>秋棠鲜花</h4>
+                        <p>专注于为客户提供高品质的鲜花和花艺服务，让每一份礼物都传递爱与美好。</p>
+                    </div>
+                </div>
+
+                <div style="display: flex;">
+                    <div class="col-lg-2 col-md-4" style="width: 100%;">
+                        <div class="footer-links">
+                            <h4>快速链接</h4>
+                            <ul>
+                                <li><a href="#">网站首页</a></li>
+                                <li><a href="#about">关于我们</a></li>
+                                <li><a href="#flowers">鲜花中心</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <div class="footer-bottom">
+                <div class="copyright">
+                    <p>Copyright © 2012-2024 京景鲜花绿植公司 版权所有</p>
+                    <p>京ICP备xxxxxxxx号</p>
+                </div>
+                <div class="footer-nav">
+                    <a href="#">导航</a>
+                    <a href="tel:4001234567">电话</a>
+                    <a href="#contact">咨询</a>
+                    <a href="#contact">地图</a>
+                    <a href="#">顶部</a>
+                </div>
+            </div> -->
+        </div>
+    </footer>
+
+    <!-- 返回顶部按钮 -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- 固定底部导航 -->
+    <div class="fixed-bottom-nav">
+        <a href="#" class="nav-item" id="navToggle">
+            <i class="fas fa-bars"></i>
+            <span>导航</span>
+        </a>
+        <a href="#" class="nav-item" id="phoneToggle">
+            <i class="fas fa-phone-alt"></i>
+            <span>电话</span>
+        </a>
+        <a href="#contact" class="nav-item">
+            <i class="fas fa-comment"></i>
+            <span>咨询</span>
+        </a>
+    </div>
+
+    <!-- 电话弹窗 -->
+    <div class="phone-modal" id="phoneModal">
+        <div class="phone-modal-content">
+            <div class="phone-number">13804169642</div>
+            <a href="tel:13804169642" class="phone-option">
+                <i class="fas fa-phone"></i>
+                <span>普通电话呼叫</span>
+            </a>
+            <button class="phone-option" id="copyPhone">
+                <i class="fas fa-copy"></i>
+                <span>复制</span>
+            </button>
+            <a href="tel:13804169642" class="phone-option">
+                <i class="fas fa-address-book"></i>
+                <span>添加到手机通讯录</span>
+            </a>
+            <button class="phone-option cancel" id="closePhoneModal">
+                <span>取消</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- 遮罩层 -->
+    <div class="modal-overlay" id="modalOverlay"></div>
+
+    <!-- JavaScript 库 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
